@@ -8,9 +8,6 @@ on:
 env:
   # github.repository as <account>/<repo>
   IMAGE_NAME: ${{ github.repository }}
-defaults:
-  run:
-    working-directory: vaccine_effectiveness_analytical_pipeline
 jobs:
   compile:
     name: Build and push the image
